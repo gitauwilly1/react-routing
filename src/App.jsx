@@ -11,6 +11,10 @@ import Overview from './pages/Overview'
 import Users from './pages/Users'
 import Settings from './pages/Settings'
 import NotFound from './pages/NotFound'
+import Post from './pages/apis/Post'
+import {PostForm} from './pages/apis/PostForm'
+import {PutForm} from './pages/apis/PutForm'
+import {DeleteForm} from './pages/apis/DeleteForm'
 
 function App() {
   return (
@@ -31,6 +35,10 @@ function App() {
                 <Route path="users" element={<Users />} />
                 <Route path="settings" element={<Settings />} />
               </Route>
+              <Route path="/post" element={<Post />} />
+              <Route path="/post/new" element={<PostForm />} />
+              <Route path="/post/update" element={<PutForm />} />
+              <Route path="/post/delete" element={<DeleteForm />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

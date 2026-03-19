@@ -8,6 +8,7 @@ function Navbar() {
     { to: '/products', label: 'Products' },
     { to: '/contact', label: 'Contact' },
     { to: '/dashboard', label: 'Dashboard' },
+    { to: '/post', label: 'Post' },
   ]
 
   return (
